@@ -7,7 +7,7 @@ namespace UserValidation
         static void Main(string[] args)
         {
             RegexDemo regexDemo = new RegexDemo();
-            Console.WriteLine(regexDemo.PasswordCase2Validate("Dnyanesh"));
+            Console.WriteLine(regexDemo.PasswordCase3Validate("dDdnyh9nesh"));
         }
     }
 }

@@ -7,10 +7,10 @@ namespace UserValidation
 {
     public class RegexDemo
     {
-        public const string PASSWORD_CASE2 = "^(?=.*[a-z])(?=.*[A-Z]).{8,}$";
-        public bool PasswordCase2Validate(string pass2)
+        public const string PASSWORD_CASE3 = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$";
+        public bool PasswordCase3Validate(string pass3)
         {
-            return Regex.IsMatch(pass2, PASSWORD_CASE2);
+            return Regex.IsMatch(pass3, PASSWORD_CASE3);
         }
     }
 }
