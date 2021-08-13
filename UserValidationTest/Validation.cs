@@ -7,10 +7,10 @@ namespace UserValidationTest
     public class Validation
     {
         [TestMethod]
-        public void IfEmailIsTrue_ReturnUserValidate()
+        public void IfMobileIsTrue_ReturnUserValidate()
         {
             RegexDemo regexDemo = new RegexDemo();
-            Assert.AreEqual(true, regexDemo.EmailValidate("dnyanesh.gawade@bridgelabz.co.in"));
+            Assert.AreEqual(true, regexDemo.MobileValidate("910000000000"));
 
         }
     }

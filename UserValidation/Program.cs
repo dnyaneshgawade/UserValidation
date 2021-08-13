@@ -7,7 +7,7 @@ namespace UserValidation
         static void Main(string[] args)
         {
             RegexDemo regexDemo = new RegexDemo();
-            Console.WriteLine(regexDemo.EmailValidate("dnyanesh.gawade@bridgelabz.co.in"));
+            Console.WriteLine(regexDemo.MobileValidate("918412980000"));
         }
     }
 }
