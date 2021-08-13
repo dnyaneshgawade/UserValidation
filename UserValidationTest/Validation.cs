@@ -7,10 +7,10 @@ namespace UserValidationTest
     public class Validation
     {
         [TestMethod]
-        public void IfPasswordHasAtListOneNumericalValue_ReturnUserValidate()
+        public void IfPasswordHasAtListOneSpecialSymbol_ReturnUserValidate()
         {
             RegexDemo regexDemo = new RegexDemo();
-            Assert.AreEqual(true, regexDemo.PasswordCase3Validate("Dn12yanesh"));
+            Assert.AreEqual(true, regexDemo.PasswordCase4Validate("Dn12yan@#esh"));
 
         }
     }
