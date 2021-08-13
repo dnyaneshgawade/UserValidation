@@ -7,10 +7,10 @@ namespace UserValidation
 {
     public class RegexDemo
     {
-        public const string MOBILE = "^[0-9]{1,4}[0-9]{10}$";
-        public bool MobileValidate(string mobile)
+        public const string PASSWORD_CASE1 = "^[A-Za-z0-9!@#$%&]{8,}$";
+        public bool PasswordCase1Validate(string pass1)
         {
-            return Regex.IsMatch(mobile, MOBILE);
+            return Regex.IsMatch(pass1, PASSWORD_CASE1);
         }
     }
 }

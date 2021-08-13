@@ -7,7 +7,7 @@ namespace UserValidation
         static void Main(string[] args)
         {
             RegexDemo regexDemo = new RegexDemo();
-            Console.WriteLine(regexDemo.MobileValidate("918412980000"));
+            Console.WriteLine(regexDemo.PasswordCase1Validate("@#Dnyanesh!@"));
         }
     }
 }

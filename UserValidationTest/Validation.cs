@@ -7,10 +7,10 @@ namespace UserValidationTest
     public class Validation
     {
         [TestMethod]
-        public void IfMobileIsTrue_ReturnUserValidate()
+        public void IfPasswordHasEightCaracters_ReturnUserValidate()
         {
             RegexDemo regexDemo = new RegexDemo();
-            Assert.AreEqual(true, regexDemo.MobileValidate("910000000000"));
+            Assert.AreEqual(true, regexDemo.PasswordCase1Validate("Dnyanesh"));
 
         }
     }
