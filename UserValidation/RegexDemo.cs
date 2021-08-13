@@ -7,10 +7,10 @@ namespace UserValidation
 {
     public class RegexDemo
     {
-        public const string FIRST_NAME_RESTRICTION = "^[A-Z]{1}[a-z]{2,}$";
-        public bool FirstNameValidate(string firstName)
+        public const string LAST_NAME_RESTRICTION = "^[A-Z]{1}[a-z]{2,}$";
+        public bool LastNameValidate(string lastName)
         {
-            return Regex.IsMatch(firstName, FIRST_NAME_RESTRICTION);
+            return Regex.IsMatch(lastName, LAST_NAME_RESTRICTION);
         }
     }
 }

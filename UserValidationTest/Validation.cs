@@ -7,10 +7,10 @@ namespace UserValidationTest
     public class Validation
     {
         [TestMethod]
-        public void IfFirstNameIsTrue_ReturnUserValidate()
+        public void IfLastNameIsTrue_ReturnUserValidate()
         {
             RegexDemo regexDemo = new RegexDemo();
-            Assert.AreEqual(true, regexDemo.FirstNameValidate("Dnyana"));
+            Assert.AreEqual(true, regexDemo.LastNameValidate("Gawade"));
 
         }
     }
