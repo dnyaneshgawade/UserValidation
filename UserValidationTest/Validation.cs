@@ -7,10 +7,17 @@ namespace UserValidationTest
     public class Validation
     {
         [TestMethod]
-        public void IfPasswordHasAtListOneSpecialSymbol_ReturnUserValidate()
+        public void IfUserEntryHasAllTrue_shouldReturnUserHappy()
         {
             RegexDemo regexDemo = new RegexDemo();
-            Assert.AreEqual(true, regexDemo.PasswordCase4Validate("Dn12yan@#esh"));
+            Assert.AreEqual("happy", regexDemo.User("Dnayanesh", "Gawade", "dnyanesh@gmail.com", "919000000000", "Dd@#nyhnesh@12"));
+
+        }
+        [TestMethod]
+        public void IfUserEntryHasNotAllTrue_shouldReturnUserSad()
+        {
+            RegexDemo regexDemo = new RegexDemo();
+            Assert.AreEqual("sad", regexDemo.User("dnayanesh", "Gawade", "dnyanesh@gmail.com", "919000000000", "Dd@#nyhnesh@12"));
 
         }
     }
