@@ -6,18 +6,20 @@ namespace UserValidationTest
     [TestClass]
     public class Validation
     {
+        public static string[] list1 = { "dnyanesh@gmail.com", "d903@gmail.com" };
+        public static string[] list2 = { "dnyanesh@gmail.com", "d903@gmail.com" ," "};
         [TestMethod]
-        public void IfUserEntryHasAllTrue_shouldReturnUserHappy()
+        public void IfMultipleEmailEntriesHasAllTrue_shouldReturnUserTrue()
         {
             RegexDemo regexDemo = new RegexDemo();
-            Assert.AreEqual("happy", regexDemo.User("Dnayanesh", "Gawade", "dnyanesh@gmail.com", "919000000000", "Dd@#nyhnesh@12"));
+            Assert.AreEqual(true, regexDemo.MultipleEmail(list1));
 
         }
         [TestMethod]
-        public void IfUserEntryHasNotAllTrue_shouldReturnUserSad()
+        public void IfMultipleEmailEntriesHasNotAllTrue_shouldReturnUserFalse()
         {
             RegexDemo regexDemo = new RegexDemo();
-            Assert.AreEqual("sad", regexDemo.User("dnayanesh", "Gawade", "dnyanesh@gmail.com", "919000000000", "Dd@#nyhnesh@12"));
+            Assert.AreEqual(false, regexDemo.MultipleEmail(list2));
 
         }
     }
