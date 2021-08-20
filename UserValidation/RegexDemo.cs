@@ -7,10 +7,10 @@ namespace UserValidation
 {
     public class RegexDemo
     {
-        public const string PASSWORD_CASE4 = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).(?=.*[!@#$%^&*?]).{8,}$";
-        public bool PasswordCase4Validate(string pass4)
+        public static string EMAIL = "^[0-9a-zA-Z]+[.+-_]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}";
+        public bool EmailValidate(string email)
         {
-            return Regex.IsMatch(pass4, PASSWORD_CASE4);
+            return Regex.IsMatch(email, EMAIL);
         }
     }
 }

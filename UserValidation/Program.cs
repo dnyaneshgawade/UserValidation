@@ -7,7 +7,7 @@ namespace UserValidation
         static void Main(string[] args)
         {
             RegexDemo regexDemo = new RegexDemo();
-            Console.WriteLine(regexDemo.PasswordCase4Validate("dDd@#nyh9nesh"));
+            Console.WriteLine(regexDemo.EmailValidate("dnyanesh@gmail.com"));
         }
     }
 }
